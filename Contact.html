@@ -1,0 +1,63 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Hostel</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            fieldset{
+                border: 3px solid crimson;
+                margin-bottom: 20px;
+                border-radius: 15px;
+                padding-left: 35px;
+                width: 40%;
+                margin: 0 auto;
+                padding-top:2% ;
+            }
+            legend{
+                background-color: aquamarine;
+                padding: 5px;
+                border-radius: 5px;
+                margin: -20px;
+            }
+            form{
+                padding-top: 5%;
+            }
+            label{
+                background-color:black;
+                border-radius: 2px;
+                color:gold;
+                padding: 2px;
+            }
+         </style> 
+    </head>
+    <body class="bg">
+        <h1>Hostel Warriors</h1>
+        <div id="Contact" class="navbar">
+                <a href="index.html">Home</a>
+                <a href="Year.html">Year</a>  
+                <a href="Sports.html">Sports</a>
+                <a href="Specifications.html">Specifications</a>
+                <a href="Contact.html" style="color: white;">Contact</a>
+        </div>
+        <form action="mailto:hari26901@gmail.com">
+            <fieldset>
+                <legend>Student Details</legend>
+                <p>
+                    <label for="name">Name of the student :</label><br><br>
+                    <input type="text" name="name" id="name" required><br><br>
+                    <label for="EduYear">Year :</label><br><br>
+                    <input type="number" name="EduYear" id="EduYear" max="4" min="1" required><br><br>
+                    <label for="Department">Department :</label><br><br>
+                    <input type="text" name="Department" id="Department" required><br><br>
+                    <label for="IntrSports">Sports Interested :
+                    </label><br><br>
+                    <input type="text" name="IntrSports" id="IntrSports" required><br>
+                </p>
+            </fieldset>
+            <p style="text-align: center;">
+                <input type="submit" value="send" style="background-color: black; color: gold; border-radius: 2px;">
+            </p>
+        </form>        
+    </body>
+</html>
